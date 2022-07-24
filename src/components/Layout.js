@@ -12,7 +12,7 @@ function Layout() {
 
   const onClickLayout = (event) => {
     // console.log(event.target.href.slice(21, event.target.href.lenght));
-    setLayoutValue(event.target.href.slice(39, event.target.href.lenght));
+    setLayoutValue(event.target.href.slice(44, event.target.href.lenght));
   };
 
   document.body.style.backgroundImage = `url('${backDestination}')`;
