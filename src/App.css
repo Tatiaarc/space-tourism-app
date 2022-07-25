@@ -415,6 +415,10 @@ li a {
     text-align: center;
     margin-top: 18px;
   }
+  h2 {
+    font-size: 58px;
+    text-align: center;
+  }
   h5 {
     font-size: 22px;
     text-align: center;
@@ -428,5 +432,59 @@ li a {
     padding: 0;
     margin: 0;
     margin-top: 18px;
+  }
+  .titleLeftPanel {
+    /* text-align: center; */
+  }
+  .titleLeftPanel span {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+  }
+
+  /* Destination */
+  .planetImage {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .planetImage img {
+    width: 220px;
+    height: 220px;
+  }
+  .numberLeftPanel {
+    padding: 0;
+    padding-left: 80px;
+  }
+  .rightPanel {
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    display: block;
+  }
+  .leftPanel {
+    width: 100vw;
+  }
+  .rightPanel {
+    width: 100vw;
+  }
+  .textRightPanel h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+  }
+  .distanteTravelPanel {
+    display: block;
+  }
+  .buttonsGroupDestination {
+    width: 100vw;
+    text-align: center;
+  }
+  .lineRightPanel {
+    margin-top: 18px;
+    width: 380px;
+  }
+  .distanteTravelInfo {
+    text-align: center;
   }
 }

@@ -13,6 +13,7 @@ function Layout() {
   const onClickLayout = (event) => {
     // console.log(event.target.href.slice(21, event.target.href.lenght));
     setLayoutValue(event.target.href.slice(44, event.target.href.lenght));
+    console.log(event.view.outerWidth > 200);
   };
 
   document.body.style.backgroundImage = `url('${backDestination}')`;
@@ -26,8 +27,10 @@ function Layout() {
     document.body.style.backgroundImage = `url('${backDestination}')`;
   } else if (layoutValue === "/crew") {
     document.body.style.backgroundImage = `url('${backCrew}')`;
-  } else {
+  } else if (layoutValue === "/technology") {
     document.body.style.backgroundImage = `url('${backTechnology}')`;
+  } else {
+    document.body.style.backgroundColor = "#0b0d17";
   }
 
   return (
