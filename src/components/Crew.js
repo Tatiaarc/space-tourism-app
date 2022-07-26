@@ -20,12 +20,12 @@ function Crew() {
   console.log(nameImage);
   return (
     <div className="main">
-      <div className="leftPanel">
+      <div className="leftPanel crew">
         <div className="titleLeftPanel">
           <span className="numberLeftPanel">02 </span>
           <span className="textLeftPanel"> MEET YOUR CREW</span>
         </div>
-        <div className="textLeftPanel">
+        <div className="textLeftPanel description">
           <h4>{searched.map((d) => d.role.toUpperCase())}</h4>
           <h3>{searched.map((d) => d.name.toUpperCase())}</h3>
           <p>{searched.map((d) => d.bio)}</p>
@@ -65,7 +65,7 @@ function Crew() {
           ></button>
         </div>
       </div>
-      <div className="rightPanel">
+      <div className="rightPanel crew">
         {searched.map((d) => (
           <img
             key={d.name}

@@ -240,6 +240,7 @@ li a {
   display: flex;
   align-items: center;
   padding: 0;
+  padding-top: 60px;
 }
 
 /* DESTINATION */
@@ -486,5 +487,34 @@ li a {
   }
   .distanteTravelInfo {
     text-align: center;
+  }
+  /* Crew */
+  .textLeftPanel.description {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .textLeftPanel.description h4 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 330px;
+  }
+  .textLeftPanel.description h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .rightPanel.crew img {
+    width: 223px;
+    height: 250px;
+  }
+  .rightPanel.crew {
+    position: absolute;
+    top: 112px;
+    left: 90px;
+  }
+  .buttonsGroupCrew {
+    position: absolute;
+    top: 330px;
+    left: 100px;
   }
 }
