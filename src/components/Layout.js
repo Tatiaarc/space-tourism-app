@@ -35,7 +35,7 @@ function Layout() {
 
   return (
     <React.Fragment>
-      <nav>
+      <div className="headerMain">
         <div className="logoMain">
           <div className="logoContainer">
             <img src={logoImage} alt={"Logo"} />
@@ -44,60 +44,67 @@ function Layout() {
             <div className="line"></div>
           </div>
         </div>
-        <div className="navigation">
-          <ul>
-            <li
-              style={{
-                borderBottom: layoutValue === "/" ? "3px solid white" : "",
-              }}
-            >
-              <Link
-                to="/space-tourism-app/"
-                value="home"
-                onClick={onClickLayout}
+        <nav>
+          <div className="navigation">
+            <ul>
+              <li
+                style={{
+                  borderBottom: layoutValue === "/" ? "3px solid white" : "",
+                }}
               >
-                00 HOME
-              </Link>
-            </li>
-            <li
-              style={{
-                borderBottom:
-                  layoutValue === "/destination" ? "3px solid white" : "",
-              }}
-            >
-              <Link
-                to="destination"
-                value="destination"
-                onClick={onClickLayout}
+                <Link
+                  to="/space-tourism-app/"
+                  value="home"
+                  onClick={onClickLayout}
+                >
+                  00 HOME
+                </Link>
+              </li>
+              <li
+                style={{
+                  borderBottom:
+                    layoutValue === "/destination" ? "3px solid white" : "",
+                }}
               >
-                01 DESTINATION
-              </Link>
-            </li>
-            <li
-              style={{
-                borderBottom: layoutValue === "/crew" ? "3px solid white" : "",
-              }}
-            >
-              <Link to="crew" value="crew" onClick={onClickLayout}>
-                02 CREW
-              </Link>
-            </li>
-            <li
-              style={{
-                borderBottom:
-                  layoutValue === "space-tourism-app/technology"
-                    ? "3px solid white"
-                    : "",
-              }}
-            >
-              <Link to="technology" value="technology" onClick={onClickLayout}>
-                03 TECHNOLOGY
-              </Link>
-            </li>
-          </ul>
-          <div className="blurNav"></div>
-        </div>
-      </nav>
+                <Link
+                  to="destination"
+                  value="destination"
+                  onClick={onClickLayout}
+                >
+                  01 DESTINATION
+                </Link>
+              </li>
+              <li
+                style={{
+                  borderBottom:
+                    layoutValue === "/crew" ? "3px solid white" : "",
+                }}
+              >
+                <Link to="crew" value="crew" onClick={onClickLayout}>
+                  02 CREW
+                </Link>
+              </li>
+              <li
+                style={{
+                  borderBottom:
+                    layoutValue === "space-tourism-app/technology"
+                      ? "3px solid white"
+                      : "",
+                }}
+              >
+                <Link
+                  to="technology"
+                  value="technology"
+                  onClick={onClickLayout}
+                >
+                  03 TECHNOLOGY
+                </Link>
+              </li>
+            </ul>
+            <div className="blurNav"></div>
+          </div>
+        </nav>
+      </div>
       <Outlet />
     </React.Fragment>
   );

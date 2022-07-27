@@ -32,7 +32,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.headerMain {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
 .explore-circle {
   border: 1px solid black;
   height: 200px;
@@ -115,7 +118,7 @@ button {
 
 nav {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr;
   padding: 0;
   margin: 0;
   height: 70px;
@@ -407,9 +410,23 @@ li a {
   .lineBox {
     display: none;
   }
-
+  /* Navigation */
   .navigation {
-    display: none;
+    /* display: none; */
+    display: block;
+    height: 120vh;
+    width: 70%;
+    z-index: 2;
+    background-color: rgba(151, 151, 151, 90%);
+    position: absolute;
+    top: 0;
+    right: -18px;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    display: block;
   }
   h1 {
     font-size: 80px;
@@ -516,5 +533,42 @@ li a {
     position: absolute;
     top: 330px;
     left: 100px;
+  }
+
+  /* Technology */
+  .infoTechnology {
+    padding: 0;
+    margin: 0;
+    padding-top: 16px;
+    display: block;
+    position: absolute;
+    top: 350px;
+    text-align: center;
+  }
+  .textTech {
+    padding-top: 22px;
+  }
+  .textTech h3 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 12px;
+  }
+  .terminologyTextTech {
+    font-size: 14px;
+    text-align: center;
+  }
+  .buttonsGroupTech {
+    display: flex;
+    justify-content: center;
+    /* width: 100vw; */
+  }
+  .buttonsGroupTech button {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+  .rightPanel img {
+    height: 200px;
+    width: 90vw;
   }
 }
