@@ -425,7 +425,7 @@ li a {
   /* Navigation */
   .navigation {
     /* display: none; */
-    display: block;
+    display: none;
     height: 120vh;
     width: 70%;
     z-index: 2;
