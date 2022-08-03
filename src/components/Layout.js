@@ -6,6 +6,8 @@ import backHome from "../utils/space-tourism-website-main/starter-code/assets/ho
 import backDestination from "../utils/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg";
 import backCrew from "../utils/space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg";
 import backTechnology from "../utils/space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg";
+import iconNav from "../utils/space-tourism-website-main/starter-code/assets/shared/icon-hamburger.svg";
+import iconClose from "../utils/space-tourism-website-main/starter-code/assets/shared/icon-close.svg";
 
 function Layout() {
   const [layoutValue, setLayoutValue] = React.useState("/");
@@ -33,6 +35,14 @@ function Layout() {
     document.body.style.backgroundColor = "#0b0d17";
   }
 
+  const openNav = (e) => {
+    document.getElementById("navigation").style.display = "block";
+  };
+
+  const closeNav = (e) => {
+    document.getElementById("navigation").style.display = "none";
+  };
+
   return (
     <React.Fragment>
       <div className="headerMain">
@@ -45,7 +55,10 @@ function Layout() {
           </div>
         </div>
         <nav>
-          <div className="navigation">
+          <div className="navigation" id="navigation">
+            <div className="iconClose" onClick={closeNav}>
+              <img src={iconClose} alt={"Icon Nav"} />
+            </div>
             <ul>
               <li
                 style={{
@@ -104,6 +117,9 @@ function Layout() {
             <div className="blurNav"></div>
           </div>
         </nav>
+        <div className="iconNav" onClick={openNav}>
+          <img src={iconNav} alt={"Icon Nav"} />
+        </div>
       </div>
       <Outlet />
     </React.Fragment>

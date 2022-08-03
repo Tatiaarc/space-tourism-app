@@ -132,6 +132,13 @@ nav {
 .blurNav {
   background-color: blue;
 }
+.iconNav {
+  display: none;
+}
+.iconClose {
+  display: none;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -410,6 +417,11 @@ li a {
   .lineBox {
     display: none;
   }
+
+  .headerMain {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+  }
   /* Navigation */
   .navigation {
     /* display: none; */
@@ -417,16 +429,44 @@ li a {
     height: 120vh;
     width: 70%;
     z-index: 2;
-    background-color: rgba(151, 151, 151, 90%);
+    background-color: rgba(35, 39, 52, 90%);
+
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
     position: absolute;
     top: 0;
     right: -18px;
   }
+
+  .iconNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconNav img {
+    width: 30px;
+  }
+  .iconClose {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
   ul {
     display: block;
+    padding-top: 40%;
   }
   li {
     display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  li a {
+    letter-spacing: 2px;
+  }
+  .iconClose img {
+    padding-right: 18px;
+    width: 26px;
   }
   h1 {
     font-size: 80px;
